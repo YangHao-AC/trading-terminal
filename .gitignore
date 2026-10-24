@@ -2,3 +2,8 @@
 IMPLEMENTATION_PLAN.md
 notes/
 recordings/
+
+node_modules/
+dist/
+*.log
+.DS_Store

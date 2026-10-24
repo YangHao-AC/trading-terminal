@@ -1,0 +1,102 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1218;
+  --panel: #171b23;
+  --border: #262c38;
+  --text: #d7dce5;
+  --muted: #6b7486;
+  --up: #2fbf71;
+  --down: #f0524f;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status {
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+.status-open {
+  color: var(--up);
+}
+.status-closed {
+  color: var(--down);
+}
+.status-connecting {
+  color: var(--muted);
+}
+
+.quote-board {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+.quote-board th,
+.quote-board td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+}
+.quote-board th:first-child,
+.quote-board td:first-child {
+  text-align: left;
+}
+.quote-board th {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* Tabular figures keep digits the same width so columns don't jitter on every tick. */
+.price {
+  font-variant-numeric: tabular-nums;
+  font-family: 'SF Mono', Menlo, monospace;
+}
+
+.tick-up {
+  color: var(--up);
+}
+.tick-down {
+  color: var(--down);
+}
+.session-up {
+  color: var(--up);
+}
+.session-down {
+  color: var(--down);
+}
+
+.muted {
+  color: var(--muted);
+}
+.unit {
+  margin-left: 6px;
+  font-size: 12px;
+}
+.disclaimer {
+  font-size: 12px;
+}
